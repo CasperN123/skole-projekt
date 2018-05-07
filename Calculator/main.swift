@@ -30,12 +30,13 @@ func Multiply(numberOne: Double, numberTwo: Double) -> String {
     return ("The result of \(numberOne) * \(numberTwo) = \(numberOne * numberTwo)");
 }
 
-
+/*
 print(Multiply(numberOne: 2.5, numberTwo: 4));
 
 print(Minus(numberOne: 10.5, numberTwo: 5.5));
 
 print(Addition(additionOne: 1.1, additionTwo: 1.1))
+*/
 
 
 
