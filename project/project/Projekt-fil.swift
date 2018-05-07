@@ -28,18 +28,14 @@ func Addition(_: stringToInt) -> int {
     
 }
 
-
-
-
-
-
 print(minus(numberOne: 10.5, numberTwo: 5.5))
 
 func multiply(numberOne: Double, numberTwo: Double) -> Double {
-    return (numberOne * numberTwo);
+    return ("The result of \(numberOne) * \(numberTwo) = \(numberOne * numberTwo)");
 }
 
 
 print(multiply(numberOne: 2.5, numberTwo: 4));
+
 
 
