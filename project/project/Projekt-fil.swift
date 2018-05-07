@@ -6,22 +6,23 @@
 //  Copyright © 2018 Mercantec. All rights reserved.
 //
 
+// Simple calculator, used for our school project.
 import Foundation
 
-var additionInt double : int
+var additionInt : int
 var finalResult : int
 var stringToInt : string
 
 func minus(numberOne: Double, nunberTwo: Double) -> Double {
     return (numberOne - nunberTwo)
 }
-// Simple calculator, used for our school project.
 
-func Addition() (_: stringToInt) -> int {
+
+func Addition(_: stringToInt) -> int {
 
     
     
-    additionInt + additionInt = finalResult
+    return additionInt + additionInt = finalResult
     
    
     
