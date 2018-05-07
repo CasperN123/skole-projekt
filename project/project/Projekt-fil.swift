@@ -8,14 +8,32 @@
 
 import Foundation
 
-print("Hello, World!")
+var additionInt double : int
+var finalResult : int
+var stringToInt : string
+
+// Simple calculator, used for our school project.
+
+func Addition() (_: stringToInt) -> int {
+
+    
+    
+    additionInt + additionInt = finalResult
+    
+   
+    
+}
+
+
+
+
 
 
 func multiply(numberOne: Double, numberTwo: Double) -> Double {
     return (numberOne * numberTwo);
 }
 
-print("Hello, World!")
+
 
 
 print(multiply(numberOne: 2.5, numberTwo: 4));
