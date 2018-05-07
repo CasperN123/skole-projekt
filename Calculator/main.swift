@@ -9,8 +9,7 @@
 // Simple calculator, used for our school project.
 import Foundation
 
-var additionInt = 1
-var finalResult = Int()
+
 var usedNumber = Double()
 
 
