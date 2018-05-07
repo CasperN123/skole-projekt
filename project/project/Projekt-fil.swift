@@ -10,3 +10,12 @@ import Foundation
 
 print("Hello, World!")
 
+
+func multiply(numberOne: Double, numberTwo: Double) -> Double {
+    return (numberOne * numberTwo);
+}
+
+print("Hello, World!")
+
+
+print(multiply(numberOne: 2.5, numberTwo: 4));
