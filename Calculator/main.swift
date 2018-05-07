@@ -8,9 +8,11 @@
 
 // Simple calculator, used for our school project purposes.
 import Foundation
+import Darwin
 
 
 var usedNumber = Double()
+var stillCalculating = true
 
 
 
@@ -45,8 +47,14 @@ func Readline(typeFunc: String) {
     
     var isNumbersOk = false;    // Controls whether all input numbers can be converted to Double
     
+
+    var temp = ""
+    while(temp != "X"){
     print("\n\nPlease input first number:", terminator: " ");
     if let writtenNumberOne = readLine() {
+        temp = writtenNumberOne.uppercased();
+            
+        
         if let numberOne = Double(writtenNumberOne){
             
             print("\n\nPlease input second number:", terminator: " ");
@@ -55,30 +63,34 @@ func Readline(typeFunc: String) {
                 if let numberTwo = Double(writtenNumberTwo){
                     
                     isNumbersOk = true;
-                    
-                    switch typeFunc {
+                
+             if stillCalculating == true {
+                
+                switch typeFunc {
                     case "1":
                         print(Addition(additionOne: numberOne, additionTwo: numberTwo));
-                        
-                        
+                    
+           
                     case "2":
                         print(Minus(numberOne: numberOne, numberTwo: numberTwo));
-                        
+            
                         
                     case "3":
                         print(Multiply(numberOne: numberOne, numberTwo: numberTwo));
-                        
-                        
+                    
+                    
                     default:
                         print("Error in referring function, no funtion of that type exists");
+                    
+                        }
                     }
                 }
             }
         }
     }
-    
+}
     if !isNumbersOk {
-        print("Error in inputtet numbers, please try again");
+        print("Error in inputted numbers, please try again");
     }
     
 }
@@ -91,6 +103,7 @@ while userChoice != "X" {
         1. Addition
         2. Subtraction
         3. Multiplication
+        4. Exit Calculator 4000
         Please select the desired function
     """, terminator: " ");
     
@@ -107,8 +120,9 @@ while userChoice != "X" {
         case "3":
             print("\nMultiply");
             Readline(typeFunc: "3")
-        case "x":
-            print("\nExiting");
+        case "4":
+            print("\nExiting...");
+            exit(1)
         default:
             print("\nSelection not recognized");
         }
