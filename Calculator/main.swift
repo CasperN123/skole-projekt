@@ -55,27 +55,29 @@ func Readline() {
 
 
 var userChoice: String = "";
-while userChoice != "x" {
+while userChoice != "X" {
     print("""
-        Options:
+        \n\nOptions:
         1. Addition
         2. Subtraction
         3. Multiplication
         Please select the desired function
     """, terminator: " ");
     
-    if let userInput = readLine() {
+    if let userInput = readLine()?.uppercased() {
+        userChoice = userInput;
+        
         switch userInput {
         case "1":
-            print("add");
+            print("\nadd");
         case "2":
-            print("minus");
+            print("\nminus");
         case "3":
-            print("Multiply");
+            print("\nMultiply");
         case "x":
-            print("Exiting");
+            print("\nExiting");
         default:
-            print("Selection not recognized");
+            print("\nSelection not recognized");
         }
     }
 }
