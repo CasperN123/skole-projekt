@@ -13,7 +13,7 @@ var finalResult : int
 var stringToInt : string
 
 func minus(numberOne: Double, nunberTwo: Double) -> Double {
-    ruturn (numberOne - nunbertwo)
+    return (numberOne - nunberTwo)
 }
 // Simple calculator, used for our school project.
 
@@ -33,6 +33,7 @@ func Addition() (_: stringToInt) -> int {
 
 
 print(minus(numberOne: 10.5, numberTwo: 5.5))
+
 func multiply(numberOne: Double, numberTwo: Double) -> Double {
     return (numberOne * numberTwo);
 }
