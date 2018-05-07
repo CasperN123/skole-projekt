@@ -22,8 +22,8 @@ func Minus(numberOne: Double, nunberTwo: Double) -> Double {
 
 
 func Addition(additionOne: Double, additionTwo: Double) -> Double {
-
-   return (additionOne + additionTwo)
+    
+    return (additionOne + additionTwo)
     
 }
 
@@ -39,13 +39,13 @@ func Multiply(numberOne: Double, numberTwo: Double) -> String {
 
 
 func Readline() {
-if let writtenNumbers = readLine() {
-    let writtenNumbers = Int(writtenNumbers)
-    
-    
-    let optionalDouble : Double? = usedNumber
-    if let myDouble = optionalDouble {
-    var myDouble = Double(myDouble)
+    if let writtenNumbers = readLine() {
+        let writtenNumbers = Int(writtenNumbers)
+        
+        
+        let optionalDouble : Double? = usedNumber
+        if let myDouble = optionalDouble {
+            var myDouble = Double(myDouble)
+        }
     }
-}
 }
