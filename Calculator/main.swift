@@ -52,3 +52,30 @@ func Readline() {
         }
     }
 }
+
+
+var userChoice: String = "";
+while userChoice != "x" {
+    print("""
+        Options:
+        1. Addition
+        2. Subtraction
+        3. Multiplication
+        Please select the desired function
+    """, terminator: " ");
+    
+    if let userInput = readLine() {
+        switch userInput {
+        case "1":
+            print("add");
+        case "2":
+            print("minus");
+        case "3":
+            print("Multiply");
+        case "x":
+            print("Exiting");
+        default:
+            print("Selection not recognized");
+        }
+    }
+}
