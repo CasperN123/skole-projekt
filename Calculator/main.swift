@@ -16,8 +16,8 @@ var usedNumber = Double()
 
 
 
-func Minus(numberOne: Double, nunberTwo: Double) -> Double {
-    return (numberOne - nunberTwo)
+func Minus(numberOne: Double, numberTwo: Double) -> Double {
+    return (numberOne - numberTwo)
 }
 
 
@@ -32,6 +32,9 @@ func Multiply(numberOne: Double, numberTwo: Double) -> String {
 }
 
 
+print(Multiply(numberOne: 2.5, numberTwo: 4));
+
+print(Minus(numberOne: 10.5, numberTwo: 5.5));
 
 
 
