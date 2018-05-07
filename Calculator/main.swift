@@ -40,14 +40,46 @@ print(Addition(additionOne: 1.1, additionTwo: 1.1))
 
 
 
-func Readline() {
-    if let writtenNumbers = readLine() {
-        _ = Double(writtenNumbers)
-        let optionalDouble : Double? = usedNumber
-        if let myDouble = optionalDouble {
-            _ = Double(myDouble)
+func Readline(typeFunc: String) {
+    
+    var isNumbersOk = false;    // Controls whether all input numbers can be converted to Double
+    
+    print("\n\nPlease input first number:", terminator: " ");
+    if let writtenNumberOne = readLine() {
+        if let numberOne = Double(writtenNumberOne){
+            
+            print("\n\nPlease input second number:", terminator: " ");
+            if let writtenNumberTwo = readLine() {
+                
+                if let numberTwo = Double(writtenNumberTwo){
+                    
+                    isNumbersOk = true;
+                    
+                    switch typeFunc {
+                    case "1":
+                        print(Addition(additionOne: numberOne, additionTwo: numberTwo));
+                        
+                        
+                    case "2":
+                        print(Minus(numberOne: numberOne, numberTwo: numberTwo));
+                        
+                        
+                    case "3":
+                        print(Multiply(numberOne: numberOne, numberTwo: numberTwo));
+                        
+                        
+                    default:
+                        print("Error in referring function, no funtion of that type exists");
+                    }
+                }
+            }
         }
     }
+    
+    if !isNumbersOk {
+        print("Error in inputtet numbers, please try again");
+    }
+    
 }
 
 
@@ -61,8 +93,8 @@ while userChoice != "X" {
         Please select the desired function
     """, terminator: " ");
     
-    if let userInput = readLine()?.uppercased() {
-        userChoice = userInput;
+    if let userInput = readLine() {
+        userChoice = userInput.uppercased();
         
         switch userInput {
         case "1":
