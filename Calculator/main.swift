@@ -99,10 +99,13 @@ while userChoice != "X" {
         switch userInput {
         case "1":
             print("\nadd");
+            Readline(typeFunc: "1")
         case "2":
             print("\nminus");
+            Readline(typeFunc: "2")
         case "3":
             print("\nMultiply");
+            Readline(typeFunc: "3")
         case "x":
             print("\nExiting");
         default:
