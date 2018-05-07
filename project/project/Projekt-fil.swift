@@ -27,14 +27,14 @@ func Addition(additionOne: Double, additionTwo: Double) -> Double {
     
 }
 
-print(minus(numberOne: 10.5, numberTwo: 5.5))
-
-func Multiply(numberOne: Double, numberTwo: Double) -> Double {
+func Multiply(numberOne: Double, numberTwo: Double) -> String {
     return ("The result of \(numberOne) * \(numberTwo) = \(numberOne * numberTwo)");
 }
 
 
-print(multiply(numberOne: 2.5, numberTwo: 4));
+
+
+
 
 
 
